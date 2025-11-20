@@ -1,0 +1,199 @@
+@font-face {
+    font-family: quiztown;
+    src: url(fonts/DynaPuff_Condensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: university;
+    src: url(fonts/DMSerifText-Regular.ttf);
+}
+
+@font-face {
+    font-family: science;
+    src: url(fonts/Goldman-Bold.ttf)
+}
+
+@font-face {
+    font-family: museum;
+    src: url(fonts/Quintessential-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    font-size: clamp(10px, 2vw, 50px);
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background: center / cover no-repeat;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+    background-color: rgba(79, 76, 102, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* STYLE FOR ALL QUIZ */
+/* START QUIZ */
+.all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all div h1{
+    font-family: university;
+    font-size: clamp(100px, 7vw, 300px);
+    color: rgb(115, 255, 0);
+    -webkit-text-stroke: 1px rgb(110, 194, 0) ;
+}
+
+.all button{
+    font-size: 1em;
+    height: 1.5em;
+    width: auto;
+    padding: 0 20px 70px 20px;
+    color: rgb(0, 0, 0);
+    border: 6px outset rgb(172, 250, 99);
+    background-color: rgba(110, 196, 25, 0.986);
+}
+
+.all button:hover{
+    border: 6px inset rgb(141, 204, 81);
+    background-color: rgba(86, 156, 16, 0.986);
+}
+
+/* MAIN QUIZ */
+.mainQuiz{
+    width: 80%;
+    height: 100%;
+    display: none;
+    grid-template-rows: 60% 1fr;
+    padding: 1% 0 1%;
+    row-gap: 2%;
+}
+
+.questionBox{
+    background-color: rgb(255, 221, 221);
+    border: ridge 20px rgb(235, 55, 55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: 20% 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+.scoreCheck{
+    border: ridge 5px rgb(235, 55, 55);
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 15%;
+    width: 20%;
+}
+
+.scoreCheck h1{
+    font-size: clamp(10px, 1.5vw, 50px);
+}
+
+.question{
+    display: flex;
+    flex: 0 0 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5% 0 5%;
+}
+
+.question h1{
+    font-size: clamp(10px, 5vw, 4vw);
+}
+
+.choices{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    place-content: center;
+}
+
+.choices div{
+    width: 80%;
+    height: 100%;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 70, 56);
+    border: ridge 20px rgb(235, 55, 55);
+}
+
+.choices button{
+    height: 50%;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    border: 6px outset rgb(172, 250, 99);
+    background-color: rgba(110, 196, 25, 0.986);
+}
+
+.choices button:hover{
+    border: 6px inset rgb(141, 204, 81);
+    background-color: rgba(86, 156, 16, 0.986);
+}
+
+.scoreScreen{
+    display: none;
+    flex-wrap: wrap;
+    width: 80vw;
+    aspect-ratio: 2/1;
+    background-color: rgb(255, 221, 221);
+    border: ridge 20px rgb(235, 55, 55);
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreScreen button{
+    max-height: 10%;
+    width: 40%;
+    margin: -10% 2% 0 2%;
+    padding: 20px 20px 70px 20px;
+    color: rgb(0, 0, 0);
+    border: 6px outset rgb(172, 250, 99);
+    background-color: rgba(110, 196, 25, 0.986);
+}
+
+.scoreScreen button:hover{
+    border: 6px inset rgb(141, 204, 81);
+    background-color: rgba(86, 156, 16, 0.986);
+}
+
+.scoreScreen h1{
+    color: rgb(115, 255, 0);
+    -webkit-text-stroke: 1px rgb(110, 194, 0) ;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+

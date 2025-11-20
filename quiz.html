@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ TOWN</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script src="/codes/WebDev/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="all" id="quizStart">
+            <div id='quizTitle'></div>
+            <button id="start">START THE QUIZ</button>
+        </div>
+        <div class="mainQuiz" id='mainQuizId'>
+            <div class="questionBox" id="questionBox">
+                <div id="scoreCheck" class="scoreCheck"></div>
+                <div id="question" class="question"></div>
+            </div>
+            <div class="choices">
+                <div>
+                    <button id="ans1"></button>
+                    <button id="ans2"></button>
+                    <button id="ans3"></button>
+                    <button id="ans4"></button>
+                </div>
+            </div>
+        </div>
+        <div class="scoreScreen" id='scoreScreen'>
+            <button id="again">TRY AGAIN</button>
+            <button id="home">GO BACK TO TOWN</button>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
